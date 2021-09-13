@@ -6,7 +6,8 @@ from pathlib import Path
 
 def initialize():
     cred = credentials.Certificate(
-        (Path(__file__).parent/'oss-push-service-firebase-adminsdk-8izsp-c665b49605.json'))
+        (Path(__file__).parent/'oss-push-service-firebase-adminsdk-8izsp-c665b49605.json')
+    )
     firebase_admin.initialize_app(cred)
 
 
