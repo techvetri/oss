@@ -1,11 +1,12 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import messaging
+from pathlib import Path
 
 
 def initialize():
     cred = credentials.Certificate(
-        "H:\Local Disk I\PycharmProjects\OSS\oss\\api\oss-push-service-firebase-adminsdk-8izsp-c665b49605.json")
+        (Path(__file__).parent/'oss-push-service-firebase-adminsdk-8izsp-c665b49605.json'))
     firebase_admin.initialize_app(cred)
 
 
@@ -27,12 +28,10 @@ class FirebaseManager(object):
 
     def send_notification(self, title, message, send_to_all=False):
         if not send_to_all:
-            msg = messaging.Message(token=self.token, notification=messaging.Notification(title, message), data={"title": title, "message": message})
+            msg = messaging.Message(token=self.token, notification=messaging.Notification(title, message),
+                                    data={"title": title, "message": message})
             response = messaging.send(msg)
 
         else:
             msg = messaging.MulticastMessage(tokens=self.token, notification=messaging.Notification(title, message))
             response = messaging.send_multicast(msg)
-
-
-
