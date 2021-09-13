@@ -1,0 +1,4 @@
+image_storage = imagekit loggedin as vetrivel account
+payment = razorpay api vetrivel account
+database = mysql user_name= 'root' password = ''
+

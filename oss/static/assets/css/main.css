@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.nav-login-btn {
+  background: white;
+  border: 2px solid deepskyblue;
+  border-radius: 50px;
+  width: 80px;
+  text-align: center;
+  height: 40px;
+}
+.nav-login-btn .search-result {
+  position: absolute;
+}
+.nav-login-btn .login-nav-link {
+  font-weight: bold;
+  color: #8ab8d9;
+  text-decoration: none;
+  vertical-align: sub;
+}
+
+.app-desc {
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.pc-img {
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pc-img img {
+  width: 350px;
+  height: 300px;
+}
+
+.home {
+  margin-top: 70px;
+}
+
+.home-features {
+  background: slategray;
+}
+.home-features .features-sm {
+  display: none;
+}
+.home-features .features {
+  display: flex;
+  justify-content: center;
+}
+.home-features .features h5 {
+  display: flex;
+  align-items: center;
+  inline-size: max-content;
+  color: whitesmoke;
+}
+.home-features .features h5:before {
+  content: "";
+  font-family: "Material Icons", serif;
+  font-size: 1.4em;
+  color: aquamarine;
+}
+.home-features .features-container {
+  margin-top: 60px;
+}
+.home-features .features-container-sm {
+  display: none;
+  margin-top: 50px;
+}
+
+.app .smart-phone {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app .smart-phone .app-components {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+.app .smart-phone a {
+  position: absolute;
+  bottom: 20%;
+  background: deepskyblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 40px;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 2px 7px;
+}
+.app .app-download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .app-download a {
+  background: darkcyan;
+  color: white;
+  font-weight: bold;
+  border-radius: 40px;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 12px 12px;
+  align-self: center;
+  margin: 5px;
+  text-decoration: none;
+  width: 130px;
+}
+
+.about .about-map iframe {
+  width: -webkit-fill-available;
+  margin-top: 20px;
+}
+.about .about-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+
+#modal_body {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-login-btn {
+    background: none;
+    border: none;
+    text-align: left;
+  }
+  .nav-login-btn a {
+    color: black;
+  }
+
+  .pc-img {
+    display: none;
+  }
+  .pc-img img {
+    width: 300px;
+    height: 270px;
+  }
+
+  .app-desc {
+    margin-top: 30px;
+  }
+  .app-desc h1 {
+    font-size: 2em;
+  }
+  .app-desc h4 {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 769px) {
+  .home-features .features-container-sm {
+    display: block;
+  }
+  .home-features .features-container {
+    display: none;
+  }
+
+  .app .app-download {
+    background: slategray;
+  }
+  .app .app-download p {
+    margin: 0;
+  }
+}
+/* dashboard css*/
+.products {
+  margin-top: 70px;
+  margin-bottom: 5px;
+}
+.products .cardimg-top {
+  align-self: center;
+  object-fit: contain;
+}
+
+.products-loader {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  /* position: fixed; */
+  /* position: relative; */
+  margin-top: 70px;
+}
+.search .search-result {
+  position: absolute;
+  z-index: 999;
+  /* width: fit-content; */
+  background: #8e8e8e;
+  width: 400px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.search .search-result :hover {
+  background: #577473;
+  cursor: pointer;
+}
+.search .search-result .search-result-data {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
